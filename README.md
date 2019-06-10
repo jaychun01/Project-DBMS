@@ -1,12 +1,12 @@
 # Project-DBMS
+This project is proceeded for database system class in 2016. It was difficult to communicate with client and making database system by sql which I had just learned. However, this work was my starting point to become interested in Information technology. Quality of work is not perfect, but it was my first project that I participate from the beginning to the end.
 ## Tony’s Liquor King
 
 ![image](https://user-images.githubusercontent.com/36698150/59212320-093ccb80-8bed-11e9-98bb-af2d9a101234.png)
                                       	
- 
- 
-“The work presented here is ours and ours alone.  I have fully participated in this phase of the project and accept responsibility for the work presented here”.
 
+“The work presented here is ours and ours alone.  I have fully participated in this phase of the project and accept responsibility for the work presented here”.
+![image](https://user-images.githubusercontent.com/36698150/59213394-c0d2dd00-8bef-11e9-806d-2ad880e76df5.png)
 
 ## Got the Munchies?
 
@@ -51,11 +51,11 @@ He wants to connect this database system with existing db. Story entity, hence, 
 
 ## Relational schema:
 
-STORE(Store_ID*, Store_name, Manager, City, State, ZIP)
-INVENTORY(Inventory_code*, Store_ID, Invoice_num, Date_taken, Units_on_hand)
-INVOICE(Invoice_num*, Item_ID, Purchase_price,Units_ordered, Order_date, Cost, Revenue)
-ITEM(Item_id*, Item_name, Sale_price, Unit_sold Item_category, Vendor_ID)
-VENDOR(Vendor_id*, Vendor_name, Vendor_phone)
+STORE(Store_ID*, Store_name, Manager, City, State, ZIP)  
+INVENTORY(Inventory_code*, Store_ID, Invoice_num, Date_taken, Units_on_hand)  
+INVOICE(Invoice_num*, Item_ID, Purchase_price,Units_ordered, Order_date, Cost, Revenue)  
+ITEM(Item_id*, Item_name, Sale_price, Unit_sold Item_category, Vendor_ID)  
+VENDOR(Vendor_id*, Vendor_name, Vendor_phone)  
 
 ## Individual user requirements
 
