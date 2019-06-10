@@ -1,11 +1,8 @@
 # Project-DBMS
-Tony’s Liquor King
- 
-Final Report
+## Tony’s Liquor King
 
-
- 
-                                         	
+![image](https://user-images.githubusercontent.com/36698150/59212320-093ccb80-8bed-11e9-98bb-af2d9a101234.png)
+                                      	
  
  
 “The work presented here is ours and ours alone.  I have fully participated in this phase of the project and accept responsibility for the work presented here”.
@@ -36,7 +33,7 @@ As with any business, the first main concern in terms of implementing new softwa
 
 The scope of the database project is tracking snack items. Tony’s liquor store has long been tracking their drinks including beer, alcohol, and soda. Our goal is to build database system that will track snacks such as candy, chips, nuts, jerky, and donuts. In addition, the vendor's information is followed. Since our database system has to be connected to the system already existed, store entity is again defined and be basis of overall database system. Tony wants to expand his business eventually as well, store entity will help to supervise all stores. Store entity is including Store ID, store name, location, and person who is currently working. Item is identified with item id, and is including item name, price, type, and vendor id. Each vendor has vendor id, vendor name and contact number. Both item and vendor information is documented in invoice. Tony want to know about both order date and delivery date and amount of which he ordered. He stores snack items in the inventory and keep track of date he stocks items and number of items in inventory in which the data is calculated by subtract amount they order to number of the item sold. 
 
-##Roadmap diagram
+## Roadmap diagram
 
  
 ## Overall User Requirements.
