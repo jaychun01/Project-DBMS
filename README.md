@@ -25,10 +25,11 @@ Being able to access, store and enter information is key to assisting running an
 
 ## Introduction
   
-Tony’s Liquor King provides a convenient way of products of consumption. It’s a retail shop that stocks a range of everyday items such as groceries, snack foods, confectionery, toiletries, soft drinks, tobacco products, magazines and newspapers. Prices in such liquor/convenience stores are higher than supermarket prices because these stores order smaller quantities of inventory at higher per-unit prices from wholesalers. Besides that it is convenient verses a supermarket. It’s a quick stop saving customers time and fuel.
-The goal of these convenience/liquor stores is to keep products that customer’s request for, which keeps customers coming back. Most of these places have regular customers that come in every day to a couple times per day. They expect the convenience store/liquor store near them to carry products that they need that way they don’t have to make their way to the supermarket to get those products. That can include the alcohol they request, snack items, tobacco items, etc… They make profit through this strategy. People look for convenience, they want everything accessible in the easiest and fastest way possible.
-The current system separates an alcohol entity into the categories beer, liquor, and wine. Then, those categories are classified by product brand. They are divided by product name then flavors. Each product has data relating to sale price per unit, purchase price per unit, the number of on hand units, description, and reorder point. Kam feels that this system helps him operate the store efficiently in regards to managing alcohol sales. With this in mind, he wants a similar system for his consumer snacks. Given the higher quantities per shipment of snack products, Kam has had issues with staying on top of management of this store segment. 
+Tony’s Liquor King provides a convenient way of products of consumption. It’s a retail shop that stocks a range of everyday items such as groceries, snack foods, confectionery, toiletries, soft drinks, tobacco products, magazines and newspapers. Prices in such liquor/convenience stores are higher than supermarket prices because these stores order smaller quantities of inventory at higher per-unit prices from wholesalers. Besides that it is convenient verses a supermarket. It’s a quick stop saving customers time and fuel.  
+The goal of these convenience/liquor stores is to keep products that customer’s request for, which keeps customers coming back. Most of these places have regular customers that come in every day to a couple times per day. They expect the convenience store/liquor store near them to carry products that they need that way they don’t have to make their way to the supermarket to get those products. That can include the alcohol they request, snack items, tobacco items, etc… They make profit through this strategy. People look for convenience, they want everything accessible in the easiest and fastest way possible.  
+The current system separates an alcohol entity into the categories beer, liquor, and wine. Then, those categories are classified by product brand. They are divided by product name then flavors. Each product has data relating to sale price per unit, purchase price per unit, the number of on hand units, description, and reorder point. Kam feels that this system helps him operate the store efficiently in regards to managing alcohol sales. With this in mind, he wants a similar system for his consumer snacks. Given the higher quantities per shipment of snack products, Kam has had issues with staying on top of management of this store segment.   
 As with any business, the first main concern in terms of implementing new software/hardware is cost. Luckily, we have found MS Access as a viable solution to Kam’s business needs. The software is low-cost, end-user friendly, and can be remotely accessed/maintained by a database admin and/or manager. User authentication passwords can be issued to help ensure data security as well as assignment of specific user roles/access rights for the database that Kam and his coworkers will be using. We can create different snack product entities for Kam and give them unique keys that are simple to remember and easy to update in tables. For example, we can create an entity for potato chips. Under potato chips, we can have barcode numbers as a primary key, vendor as a foreign key, and sales information as a secondary key. We can have Kam utilize a hand-scanner to add the different kinds of potato chips he carries into the Access database. We would set certain integrity constraints to ensure vital information doesn’t get left out. The other obstacle we foresee is hardware compatibility, but that shouldn’t be an issue. Ultimately, Kam could shift all his data into Access if he so pleases.
+
 
 ## System Requirements - the scope of database 
 
@@ -39,8 +40,10 @@ The scope of the database project is tracking snack items. Tony’s liquor store
  
 ## Overall User Requirements.
 
-There are two overall user requirements for Tony’s Liquor King. Currently, there is no system to track items or inventory; therefore, the two overall user requirements are focused on tracking items and inventory for snack foods. The first one is for Tony of Tony’s Liquor King to be able to track items based on different vendors. The second one is for Tony to be able to track the inventory of the items.
-He wants to connect this database system with existing db. Story entity, hence, will be focus of overall db; it will contain store ID, store name, manager, city, state, zip. Inventory entity will contain Inventory_Code, Store_Id, Invoice_num, Item_ID, Inventory_date, Units-on_Hand. Invoice entity will include Invoice_num, Puchase_price, Units_ordered, Order_Date, Units_on_Hand, Cost, and Revenue. Item entity will contain Item_ID, Item_name, Sale_Price Item_category, and Vendor Id. Vendor entity will contain vendor id, Vendor_name, and Vendor_phone.
+There are two overall user requirements for Tony’s Liquor King. Currently, there is no system to track items or inventory; therefore, the two overall user requirements are focused on tracking items and inventory for snack foods. The first one is for Tony of Tony’s Liquor King to be able to track items based on different vendors. The second one is for Tony to be able to track the inventory of the items.  
+
+
+He wants to connect this database system with existing db. Story entity, hence, will be focus of overall db; it will contain store ID, store name, manager, city, state, zip. Inventory entity will contain Inventory_Code, Store_Id, Invoice_num, Item_ID, Inventory_date, Units-on_Hand. Invoice entity will include Invoice_num, Puchase_price, Units_ordered, Order_Date, Units_on_Hand, Cost, and Revenue. Item entity will contain Item_ID, Item_name, Sale_Price Item_category, and Vendor Id. Vendor entity will contain vendor id, Vendor_name, and Vendor_phone.  
 
 ## ERD
 
@@ -63,83 +66,29 @@ The individual user requirements include a way to add, modify or view each vendo
 Table name: Store
 Store (Store_ID*, Store_name, Manager, City, State, ZIP)
 
-
-
-
-STORE_ID
-STORE_NAME
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/36698150/59212770-3a69cb80-8bee-11e9-8c80-e9cfbb1ac2c7.png)
 
 
 Table name: Inventory
 Inventory (Inventory_code*, Store_ID, Invoice_num, Item_id, Inventory_date, Units_on_hand)
 
-
-
-
-
-INVENTORY_CODE
-STORE_ID
-INVENTORY_DATE
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/36698150/59212806-4fdef580-8bee-11e9-8488-21d4494a34be.png)
 
 Table name: Invoice
 Invoice (Invoice_num*, Item_ID, Purchase_price,Units_ordered, Order_date, Units_on_hand, Cost, Revenue)
 
-
-
-
-INVOICE_NUM
-ITEM_ID
-
-
-
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/36698150/59212842-608f6b80-8bee-11e9-82bf-a1879960c987.png)
 
 Table name: Item
 Item (Item_id*, Item_name, Sale_price, Item_category, Vendor_ID)
 
-
-
-
-ITEM_ID
-ITEM_NAME
-VENDOR_ID
-
-
-
-
+![image](https://user-images.githubusercontent.com/36698150/59212865-713fe180-8bee-11e9-891f-701ba11b9ff5.png)
 
 Table name: Vendor
 Vendor (Vendor_id*, Vendor_name, Vendor_phone)
 
+![image](https://user-images.githubusercontent.com/36698150/59212890-8157c100-8bee-11e9-92e6-7fbae5526294.png)
 
-VENDOR_ID
-VENDOR_NAME
-
-
-Data dictionary
+## Data dictionary
+![image](https://user-images.githubusercontent.com/36698150/59212939-a64c3400-8bee-11e9-8f89-910333e4e862.png)
+![image](https://user-images.githubusercontent.com/36698150/59212962-b19f5f80-8bee-11e9-81fb-f03340d820ed.png)
