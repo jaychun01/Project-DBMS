@@ -18,9 +18,10 @@ We would like to appreciate to Tony for providing his business information and b
 ## Executive Summary 
 
 Being able to access, store and enter information is key to assisting running any form of businesses. Most companies have a database to a degree that allows them to process information about their products, employees and other important information. Tony’s liquor store is a small business that currently has a database for alcohol management, but is lacking one for snacks and other convenience products.
-Tony’s liquor store offers a wide range of snacks including chips, candy bars drinks etc. In addition to the product numbers that these products have, Tony’s needs to document how much inventory they have for each item, the price, all the vendor information including name, address etc. As you can see, this can mount up to a great deal of number and information that can become confusing. With the current process being done with pen and paper you can easily see how complicated it can get to document all this information and errors are more common than you might think. This leads to inconsistency with price, inventory amount etc. Our solution is a database system within Microsoft access that has the ability to document all of Tony’s needs when it comes to entering the information he needs and how to retrieve information. We are using access because it is a database system that is cheap and available with his office package. Our layout consists of a very generic and basic layout as requested so it is very user friendly. We needed a system that just does what he needs without the headache of trying to figure out how to work it. 
-Our implementation of Tony’s database consisted of gathering information about his user requirements for everything he wants the system to do. In addition we looked at existing order, invoice and vendor forms to get a layout that Tony is used to so when pulling up information and entering it in the database, it is consistent with the liquor database he currently uses. Once operational, it will take some time to enter in his existing information he currently keeps on pen and paper, but once that is complete it will be relatively seamless going forwards with new deliveries or new vendors he does business with. 
-Overall, Tony’s database is relatively simple but effective database that will cater to his business’s needs for documenting and entering his information. Over time, it is very easy to incorporate his liquor database into the snack one to make a more concise and well rounded database. Tony’s database also includes the ability to add store number for the future incase he decides to open another location. This gives Tony the versatility to do what he needs with the consideration of future expansion if the opportunity arises. 
+	Tony’s liquor store offers a wide range of snacks including chips, candy bars drinks etc. In addition to the product numbers that these products have, Tony’s needs to document how much inventory they have for each item, the price, all the vendor information including name, address etc. As you can see, this can mount up to a great deal of number and information that can become confusing. With the current process being done with pen and paper you can easily see how complicated it can get to document all this information and errors are more common than you might think. This leads to inconsistency with price, inventory amount etc. 
+	Our solution is a database system within Microsoft access that has the ability to document all of Tony’s needs when it comes to entering the information he needs and how to retrieve information. We are using access because it is a database system that is cheap and available with his office package. Our layout consists of a very generic and basic layout as requested so it is very user friendly. We needed a system that just does what he needs without the headache of trying to figure out how to work it. 
+	Our implementation of Tony’s database consisted of gathering information about his user requirements for everything he wants the system to do. In addition we looked at existing order, invoice and vendor forms to get a layout that Tony is used to so when pulling up information and entering it in the database, it is consistent with the liquor database he currently uses. Once operational, it will take some time to enter in his existing information he currently keeps on pen and paper, but once that is complete it will be relatively seamless going forwards with new deliveries or new vendors he does business with. 
+	Overall, Tony’s database is relatively simple but effective database that will cater to his business’s needs for documenting and entering his information. Over time, it is very easy to incorporate his liquor database into the snack one to make a more concise and well rounded database. Tony’s database also includes the ability to add store number for the future incase he decides to open another location. This gives Tony the versatility to do what he needs with the consideration of future expansion if the opportunity arises.  
 
 ## Introduction
   
@@ -34,7 +35,7 @@ As with any business, the first main concern in terms of implementing new softwa
 The scope of the database project is tracking snack items. Tony’s liquor store has long been tracking their drinks including beer, alcohol, and soda. Our goal is to build database system that will track snacks such as candy, chips, nuts, jerky, and donuts. In addition, the vendor's information is followed. Since our database system has to be connected to the system already existed, store entity is again defined and be basis of overall database system. Tony wants to expand his business eventually as well, store entity will help to supervise all stores. Store entity is including Store ID, store name, location, and person who is currently working. Item is identified with item id, and is including item name, price, type, and vendor id. Each vendor has vendor id, vendor name and contact number. Both item and vendor information is documented in invoice. Tony want to know about both order date and delivery date and amount of which he ordered. He stores snack items in the inventory and keep track of date he stocks items and number of items in inventory in which the data is calculated by subtract amount they order to number of the item sold. 
 
 ## Roadmap diagram
-
+![image](https://user-images.githubusercontent.com/36698150/59212375-312c2f00-8bed-11e9-8430-8f4fa7b67830.png)
  
 ## Overall User Requirements.
 
@@ -43,8 +44,7 @@ He wants to connect this database system with existing db. Story entity, hence, 
 
 ## ERD
 
-
-
+![image](https://user-images.githubusercontent.com/36698150/59212403-4739ef80-8bed-11e9-8d68-9dc76d5b1e60.png)
 
 ## Relational schema:
 
@@ -57,11 +57,6 @@ VENDOR(Vendor_id*, Vendor_name, Vendor_phone)
 ## Individual user requirements
 
 The individual user requirements include a way to add, modify or view each vendor, add, modify or view each snack item; as well as a way to view the reports. The individual requirements for vendor will need to be a location to search for through name, phone number, and vendor id. Then for item, there will need to be a location to search for name, item price, and type. For reports, there should be a location to go through different invoices as well as inventory reports. Then lastly, for invoice, there should be a location to search for invoice number, order date, and the delivery date.
-
-
-
-
-
 
 ## Nomalization
 
